@@ -1,0 +1,18 @@
+{
+  "itemGroup.mgmod": "MG Mod",
+
+  "block.mgmod.opal_ore": "Opal Ore",
+  "block.mgmod.deepslate_opal_ore": "Deepslate Opal Ore",
+  "block.mgmod.opal_block": "Opal Block",
+  "block.mgmod.red_spider_lily": "Red Spider Lily",
+  "block.mgmod.mg_flower_pot": "MG Flower Pot",
+  "block.mgmod.white_wool_couch": "White Wool Couch",
+
+  "item.mgmod.opal_gem": "Opal Gem",
+  "item.mgmod.opal_sword": "Opal Sword",
+  "item.mgmod.opal_pickaxe": "Opal Pickaxe",
+  "item.mgmod.opal_axe": "Opal Axe",
+  "item.mgmod.opal_shovel": "Opal Shovel",
+  "item.mgmod.opal_hoe": "Opal Hoe",
+  "item.mgmod.brownie": "Brownie"
+}

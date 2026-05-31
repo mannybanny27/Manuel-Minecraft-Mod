@@ -72,9 +72,9 @@ A very silly recipe... but it works!
 
  The topics I used from this class!
 
-1 Hash Maps** — NeoForge uses hash maps internally to map ResourceLocation keys to objects
-2 Linked Lists / Deferred Queues — Registration events are queued and processed in order during mod loading
-3 Recursion — Minecraft's world generation feature placement uses recursive terrain sampling to determine valid ore placement
-4 Binary Trees / JSON Parsing — Loot table and recipe JSON files are added into tree structures
+1 Threading
+2 Polymorphism
+3 JSON resource files
+4 File I/O
 
 ---

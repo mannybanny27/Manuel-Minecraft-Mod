@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[21,)"
+license="MIT"
+
+[[mods]]
+    modId="mgmod"
+    version="1.0.0"
+    displayName="MG Mod"
+    description='''
+        Adds opal ore and tools, a red spider lily, MG flower pot,
+        a white wool couch, and a brownie food item!
+    '''
+
+[[dependencies.mgmod]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mgmod]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
