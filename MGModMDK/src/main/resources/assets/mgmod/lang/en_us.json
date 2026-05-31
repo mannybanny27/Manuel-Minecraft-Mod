@@ -1,13 +1,18 @@
 {
-  "itemGroup.mgmod": "Example Mod Tab",
-  "block.mgmod.example_block": "Example Block",
-  "item.mgmod.example_item": "Example Item",
+  "itemGroup.mgmod": "MG Mod",
 
-  "mgmod.configuration.title": "MGMod Configs",
-  "mgmod.configuration.section.mgmod.common.toml": "MGMod Configs",
-  "mgmod.configuration.section.mgmod.common.toml.title": "MGMod Configs",
-  "mgmod.configuration.items": "Item List",
-  "mgmod.configuration.logDirtBlock": "Log Dirt Block",
-  "mgmod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "mgmod.configuration.magicNumber": "Magic Number"
+  "block.mgmod.opal_ore": "Opal Ore",
+  "block.mgmod.deepslate_opal_ore": "Deepslate Opal Ore",
+  "block.mgmod.opal_block": "Opal Block",
+  "block.mgmod.red_spider_lily": "Red Spider Lily",
+  "block.mgmod.mg_flower_pot": "MG Flower Pot",
+  "block.mgmod.white_wool_couch": "White Wool Couch",
+
+  "item.mgmod.opal_gem": "Opal Gem",
+  "item.mgmod.opal_sword": "Opal Sword",
+  "item.mgmod.opal_pickaxe": "Opal Pickaxe",
+  "item.mgmod.opal_axe": "Opal Axe",
+  "item.mgmod.opal_shovel": "Opal Shovel",
+  "item.mgmod.opal_hoe": "Opal Hoe",
+  "item.mgmod.brownie": "Brownie"
 }

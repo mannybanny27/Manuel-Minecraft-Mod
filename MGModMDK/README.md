@@ -1,25 +1,80 @@
+ MG Mod — NeoForge 1.21.1
+ @author Manuel Guillermety
+ 
 
-Installation information
-=======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+ Mod Description!!
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Opal Ore
+Generates underground between Y=0 and Y=63, can also be in veins
+Drops 1 opal gem when mined, Silk touch enchantment drops the ore block
+Below Y=0 it can be deepslate opal ore
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Opal Gem
+The resource that comes from opal ores, used to make tools
+Can also be crafted from an Opal Block (9 gems back).
+Every opal tool has iron level efficiency and diamond level durability :)
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+Opal Sword
+- Damage: 7 Dmg
+- Durability: 1561 Uses
+- Recipe: 2 Opal Gems + 1 Stick, normal sword syntax recipe
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+To simplify I will just use iron level and diamond durability, numbers are in the code
+
+Opal Pickaxe
+- Mining speed: Iron level
+- Durability: Diamond level (1561 uses)
+- Can mine iron-tier blocks (gold, iron, etc.)
+- Recipe: 3 Opal Gems + 2 Sticks, normal pickaxe syntax recipe
+
+ Opal Axe
+- Damage: Iron axe level
+- Durability: Diamond level (1561 uses)
+- Recipe: 3 Opal Gems + 2 Sticks, normal axe syntax recipe
+
+Opal Shovel
+- Mining speed: Iron level
+- Durability: Diamond level (1561 uses)
+- Recipe: 1 Opal Gem + 2 Sticks, normal shovel syntax recipe
+
+ Opal Hoe
+- Mining speed: Iron level
+- Durability: Diamond level (1561 uses)
+- Recipe: 2 Opal Gems + 2 Sticks, normal hoe syntax recipe
+
+Red Spider Lily
+A decorative flower that can be placed on grass/dirt. No gameplay effect — purely aesthetic. 
+Can be placed in a flower pot.
+
+MG Flower Pot
+A decorative clay pot with my initials engraved on it.
+- Recipe: Flower Pot + White Dye + Clay Ball, any shape
+
+White Wool Couch
+A placeable couch block you can sit on.
+- Recipe: 3 White Wool on top + 3 Oak Planks on bottom
+
+Brownie
+A food item. Restores 2 hunger units
+Crafts 4 at a time.
+- Recipe (3×3, normal crafting table):
+  
+  C S C
+  W E W
+  C S C
+  
+  C = Cocoa Beans, S = Sugar, W = Wheat, E = Egg
+
+A very silly recipe... but it works!
+
+
+
+ The topics I used from this class!
+
+1 Hash Maps** — NeoForge uses hash maps internally to map ResourceLocation keys to objects
+2 Linked Lists / Deferred Queues — Registration events are queued and processed in order during mod loading
+3 Recursion — Minecraft's world generation feature placement uses recursive terrain sampling to determine valid ore placement
+4 Binary Trees / JSON Parsing — Loot table and recipe JSON files are added into tree structures
+
+---

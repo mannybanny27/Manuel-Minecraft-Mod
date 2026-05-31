@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"mgmod:block/white_wool_couch"},"facing=south":{"model":"mgmod:block/white_wool_couch","y":180},"facing=east":{"model":"mgmod:block/white_wool_couch","y":90},"facing=west":{"model":"mgmod:block/white_wool_couch","y":270}}}
