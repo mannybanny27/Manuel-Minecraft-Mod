@@ -1,0 +1,13 @@
+{
+  "itemGroup.mgmod": "Example Mod Tab",
+  "block.mgmod.example_block": "Example Block",
+  "item.mgmod.example_item": "Example Item",
+
+  "mgmod.configuration.title": "MGMod Configs",
+  "mgmod.configuration.section.mgmod.common.toml": "MGMod Configs",
+  "mgmod.configuration.section.mgmod.common.toml.title": "MGMod Configs",
+  "mgmod.configuration.items": "Item List",
+  "mgmod.configuration.logDirtBlock": "Log Dirt Block",
+  "mgmod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "mgmod.configuration.magicNumber": "Magic Number"
+}
