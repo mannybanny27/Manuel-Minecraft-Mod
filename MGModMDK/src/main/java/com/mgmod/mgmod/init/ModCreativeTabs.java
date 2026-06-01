@@ -7,10 +7,16 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+/**
+ * Registers the creative mode tab for MGMod.
+ */
 public class ModCreativeTabs {
+
+    /** The creative tab registry for this mod. */
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(BuiltInRegistries.CREATIVE_MODE_TAB, MGMod.MODID);
 
+    /** The main MGMod creative tab containing all mod items. */
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MG_TAB =
             TABS.register("mg_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.mgmod"))

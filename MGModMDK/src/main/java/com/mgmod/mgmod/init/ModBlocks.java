@@ -7,13 +7,17 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.minecraft.core.registries.BuiltInRegistries;
 
+/**
+ * Registers all blocks for MGMod.
+ */
 public class ModBlocks {
+
+    /** The block registry for this mod. */
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(MGMod.MODID);
 
-    // Opal Ore
+    /** Opal ore found in stone layers. */
     public static final DeferredBlock<DropExperienceBlock> OPAL_ORE =
             BLOCKS.register("opal_ore", () -> new DropExperienceBlock(
                     net.minecraft.util.valueproviders.UniformInt.of(3, 7),
@@ -22,6 +26,7 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .strength(3.0f, 3.0f)));
 
+    /** Opal ore found in deepslate layers. */
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_OPAL_ORE =
             BLOCKS.register("deepslate_opal_ore", () -> new DropExperienceBlock(
                     net.minecraft.util.valueproviders.UniformInt.of(3, 7),
@@ -30,7 +35,7 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .strength(4.5f, 3.0f)));
 
-    // Opal Block (for crafting)
+    /** A decorative block made from opal gems. */
     public static final DeferredBlock<Block> OPAL_BLOCK =
             BLOCKS.register("opal_block", () -> new Block(
                     BlockBehaviour.Properties.of()
@@ -38,7 +43,7 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .strength(5.0f, 6.0f)));
 
-    // Red Spider Lily (flower)
+    /** A decorative red spider lily flower. */
     public static final DeferredBlock<FlowerBlock> RED_SPIDER_LILY =
             BLOCKS.register("red_spider_lily", () -> new FlowerBlock(
                     net.minecraft.world.effect.MobEffects.POISON, 9,
@@ -49,7 +54,7 @@ public class ModBlocks {
                             .sound(SoundType.GRASS)
                             .offsetType(BlockBehaviour.OffsetType.XZ)));
 
-    // MG Flower Pot (decorative)
+    /** A decorative flower pot with the initials MG. */
     public static final DeferredBlock<Block> MG_FLOWER_POT =
             BLOCKS.register("mg_flower_pot", () -> new Block(
                     BlockBehaviour.Properties.of()
@@ -57,7 +62,7 @@ public class ModBlocks {
                             .instabreak()
                             .noOcclusion()));
 
-    // White Wool Couch
+    /** A wool couch block that players can sit on. */
     public static final DeferredBlock<CouchBlock> WHITE_WOOL_COUCH =
             BLOCKS.register("white_wool_couch", () -> new CouchBlock(
                     BlockBehaviour.Properties.of()
